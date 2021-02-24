@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "vu_test_opencv"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.5.1"
+PyYAML = "^5.4.1"
+jupyterlab = "^3.0.9"
+Pillow = "^8.1.0"
+tensorflow = "^2.4.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
