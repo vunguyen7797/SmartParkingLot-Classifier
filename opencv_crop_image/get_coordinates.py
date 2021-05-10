@@ -113,7 +113,7 @@ class GetCoordinates:
                             [contours],
                             contourIdx=-1,
                             color=(255, 0, 0),
-                            thickness=4,
+                            thickness=1,
                             lineType=cv2.LINE_8)
         
         # Fun math to compute center of the contours
@@ -128,7 +128,7 @@ class GetCoordinates:
                         space_id,   # text to be drawn
                         center_position,     # position
                         cv2.FONT_HERSHEY_SIMPLEX, # font
-                        1.0,        # fontScale
+                        0.5,        # fontScale
                         (0, 255, 0),    # color
                         2,                  # thickness
                         cv2.LINE_AA)    # line type

@@ -5,6 +5,7 @@ import yaml
 from get_coordinates import GetCoordinates
 from detect_parking_space import DetectSpaces
 
+
 # Make sure to have numpy and opencv installed
 # Use esc to stop cropping image regions of interest
 # I can save images, too, if we find that we need to do that. 
@@ -14,10 +15,10 @@ from detect_parking_space import DetectSpaces
 if __name__ == '__main__' :
 
     # Read image
-    image = "parking_library4.jpg"
+    image = "parking_library6.jpg"
     video_file = "/Volumes/Macintosh SSD/CapstoneProject/vu_test_opencv/opencv_crop_image/data/parking_test.mp4"
 
-    data_file = "/Volumes/Macintosh SSD/CapstoneProject/vu_test_opencv/opencv_crop_image/coordinates_storage.yml"
+    data_file = "/Volumes/Macintosh SSD/CapstoneProject/vu_test_opencv/opencv_crop_image/coordinates_storage_copy.yml"
     start_frame = 1
 
 

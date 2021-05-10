@@ -56,19 +56,21 @@ def classifier(img):
     top_k = results.argsort()[-5:][::-1]
     labels = load_labels(label_path)
 
+    print(top_k)
     top_result = []
     #frame = cv2.imread(str(file), cv2.IMREAD_COLOR)
     for i in top_k:
         if floating_model:
-            #print('{:08.6f}: {}'.format(float(results[i]), labels[i]))
+           
             if labels[i] == "Empty":
-                return True
+                #print('{:08.6f}: {}'.format(float(results[i]), labels[i]))
+                return float(results[i]), True
             else:
-                #print('Occupied')
-                return False
+                #print('{:08.6f}: {}'.format(float(results[i]), 'Occupied'))
+                return float(results[i]), False
             #top_result.append((i, float(results[i])))
         else:
-            print('{:08.6f}: {}'.format(float(results[i] / 255.0), labels[i]))
+            #print('{:08.6f}: {}'.format(float(results[i] / 255.0), labels[i]))
             top_result.append((i, float(results[i] / 255.0)))
 
         #print("========================")
