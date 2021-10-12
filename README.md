@@ -1,7 +1,7 @@
 # Smart Parking Lot Classifier
 This is the classifier script used to deploy a Deep Learning model on Raspberry Pi 4 to detect whether a parking space is empty or occupied.
 
-This is a part of the Smart Parking Lot System - Capstone Senior Project.
+This is a part of the Smart Park - Capstone Senior Project.
 
 ## Model Description
 * The model is trained using Transfer  Learning method with TensorFlow Lite to be used on Raspberry Pi 4.
